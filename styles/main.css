@@ -124,8 +124,7 @@ Example:
 
 --------------------------------------------------------------------
 ------------------------------------------------------------------*/
-/*-----------------------------*\
-
+/*-----------------------------*
 SETTINGS
 
 \*-----------------------------*/
@@ -136,18 +135,21 @@ SETTINGS
   src: url("../fonts/Lato-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Regular-webfont.woff2") format("woff2"), url("../fonts/Lato-Regular-webfont.woff") format("woff"), url("../fonts/Lato-Regular-webfont.ttf") format("truetype"), url("../fonts/Lato-Regular-webfont.svg#latoregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'noto';
   src: url("../fonts/NotoSerif-Regular-webfont.eot");
   src: url("../fonts/NotoSerif-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSerif-Regular-webfont.woff2") format("woff2"), url("../fonts/NotoSerif-Regular-webfont.woff") format("woff"), url("../fonts/NotoSerif-Regular-webfont.ttf") format("truetype"), url("../fonts/NotoSerif-Regular-webfont.svg#noto_serifregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon.eot?t9ribs");
   src: url("../fonts/icomoon.eot?#iefixt9ribs") format("embedded-opentype"), url("../fonts/icomoon.woff?t9ribs") format("woff"), url("../fonts/icomoon.ttf?t9ribs") format("truetype"), url("../fonts/icomoon.svg?t9ribs#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon';
   speak: none;
@@ -278,8 +280,7 @@ SETTINGS
 .icon-opera:before {
   content: "\eae8"; }
 
-/*-----------------------------*\
-
+/*-----------------------------*
 TOOLS
 
 \*-----------------------------*/
@@ -288,13 +289,14 @@ html {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit; }
 
-/*-----------------------------*\
-
+/*-----------------------------*
 GENERIC
 
 \*-----------------------------*/
@@ -304,8 +306,7 @@ GENERIC
   color: #000;
   padding: 0.2em 0; }
 
-/*-----------------------------*\
-  
+/*-----------------------------*  
 BASE
 
 \*-----------------------------*/
@@ -339,8 +340,8 @@ li {
 a:link {
   color: #22a;
   text-decoration: none;
-  -webkit-transition: color, .25s;
-  transition: color, .25s; }
+  -webkit-transition: color, 0.25s;
+  transition: color, 0.25s; }
 
 a:hover,
 a:visited,
@@ -348,11 +349,10 @@ a:focus,
 a:active {
   text-decoration: none;
   color: #72a;
-  -webkit-transition: color, .25s;
-  transition: color, .25s; }
+  -webkit-transition: color, 0.25s;
+  transition: color, 0.25s; }
 
-/*-----------------------------*\
-
+/*-----------------------------*
 OBJECTS 
 
 \*-----------------------------*/
@@ -386,8 +386,7 @@ OBJECTS
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
   transition-delay: 0s; }
 
-/*-----------------------------*\
-
+/*-----------------------------*
 COMPONENTS 
 
 \*-----------------------------*/
@@ -455,12 +454,12 @@ nav {
   border-radius: 2px;
   overflow: hidden;
   max-height: 50px;
-  transition: background-color .25s, ease; }
+  transition: background-color 0.25s, ease; }
 
 nav.open {
   max-height: 1000px;
   background-color: #d4d4d4;
-  transition: background-color .25s, ease;
+  transition: background-color 0.25s, ease;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); }
 
 nav.open .nav__button {
@@ -504,15 +503,15 @@ nav ul.nav-list li a:hover {
   z-index: 99999;
   -webkit-transform: translate3d(0, -500px, 0);
   transform: translate3d(0, -500px, 0);
-  transition: transform .5s ease;
-  transition: -webkit-transform .5s ease;
+  transition: transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); }
 
 .notify.active {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  transition: transform .5s ease;
-  transition: -webkit-transform .5s ease; }
+  transition: transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease; }
 
 .notify__img {
   float: left;
@@ -562,14 +561,14 @@ nav ul.nav-list li a:hover {
   padding: 15px;
   width: 200px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-  transition: opacity .25s ease; }
+  transition: opacity 0.25s ease; }
 
 .anim-config input {
   width: 100%; }
 
 .anim-config.open {
   opacity: 1;
-  transition: opacity .25s ease;
+  transition: opacity 0.25s ease;
   right: 7.5px; }
 
 .anim-config input {
@@ -592,7 +591,11 @@ nav ul.nav-list li a:hover {
   display: inline-block;
   margin-top: 75px;
   display: none; }
-  .anim-config__button:visited, .anim-config__button:active, .anim-config__button:hover, .anim-config__button:link, .anim-config__button:focus {
+  .anim-config__button:visited,
+  .anim-config__button:active,
+  .anim-config__button:hover,
+  .anim-config__button:link,
+  .anim-config__button:focus {
     color: #eee; }
 
 .anim-config__button.enabled {
@@ -621,7 +624,10 @@ nav ul.nav-list li a:hover {
 
 .work__block a {
   color: #444; }
-  .work__block a:hover, .work__block a:visited, .work__block a:focus, .work__block a:active {
+  .work__block a:hover,
+  .work__block a:visited,
+  .work__block a:focus,
+  .work__block a:active {
     color: #444;
     text-decoration: underline; }
 
@@ -821,8 +827,7 @@ footer {
   margin-top: 45px;
   background-color: #d4d4d4; }
 
-/*-----------------------------*\
-
+/*-----------------------------*
 TRUMPS
 
 \*-----------------------------*/
@@ -1036,5 +1041,3 @@ TRUMPS
 
 .brandColor {
   background-color: #a66; }
-
-/*# sourceMappingURL=main.css.map */
