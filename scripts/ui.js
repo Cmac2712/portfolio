@@ -4,33 +4,35 @@
          * @desc Our menu button
          */
 
-        var cheeseBurger     = document.getElementsByClassName('nav__button')[0],
-            nav              = document.getElementsByTagName('nav')[0],
-            navItem          = Array.prototype.slice.call(nav.querySelectorAll('.nav-list a'));
-
+        var menuToggle   = document.getElementById('navButton'),
+	    menuItems    = document.getElementById('navList'),
+	    headerHeight = document.getElementById('header').offsetHeight; 
         /**
          * @desc Open/close menu
          */
 
-        function _openClose(e) {
-            nav.classList.toggle('open');
-            e.preventDefault();
+        function bindListeners(slide) { 
+	    menuToggle.addEventListener('click', function () {
+		slide.toggle();	
+	    });
+
+	    menuItems.children.forEach(function (item) {
+		item.addEventListener('click', function () {
+		    slide.close();
+		});
+	    });
         }
 
-        function _close(e) {
-            nav.classList.remove('open');
-	    e.preventDefault();
-        }
+	function () {
+	    
+	}
 
-        function bindListeners() { 
-	    cheeseBurger.addEventListener('click', _openClose);
-            navItem.forEach(function(a) {
-                a.addEventListener('click', _close);
-            });
-        }
+	function init(slide) {
+	    bindListeners(slide);
+	}
 
         return {
-            init: bindListeners
+            init: init 
         }
 
     });

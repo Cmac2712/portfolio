@@ -24,26 +24,27 @@
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
- 
-	    <header class="text--center posrel"> 
+	<button id="navButton" class="nav__button icon-menu"></button>
+
+	<nav id="menu">
+	    <ul id="navList" class="nav-list">
+		<li><a href="#about">About</a></li>
+		<li><a href="#skills">Skills</a></li>
+		<li><a href="#projects">Projects</a></li>
+		<li><a href="#tools">Tools</a></li>
+		<li><a href="#contact">Contact</a></li>
+	    </ul>
+	</nav>
+
+	<main id="panel" class="content">
+
+
+	    <header id="header" class="text--center posrel"> 
 		<div class="wrap posrel">
 		    <div class="header--title">
 			    <h1 class="flush">Craig MacIntyre</h1>
 			    <p>Front End Developer</p>
 		    </div>
-		    <nav>
-			<a href="#" class="nav__button icon-menu">
-			       
-			</a>
-			<ul class="nav-list">
-			    <li><a href="#about">About</a></li>
-			    <li><a href="#skills">Skills</a></li>
-			    <li><a href="#projects">Projects</a></li>
-			    <li><a href="#tools">Tools</a></li>
-			    <li><a href="#contact">Contact</a></li>
-			</ul>
-		    </nav>
 		</div>
                 
 		<!-- <div class="profile"></div> -->
@@ -312,11 +313,12 @@
 		</ul>
 	    </section>
 
-        <footer>
-            <div class="wrap">
-                <p>&copy; Craig MacIntyre 2015</p>
-            </div>
-        </footer>
+	    <footer>
+		<div class="wrap">
+		    <p>&copy; Craig MacIntyre 2015</p>
+		</div>
+	    </footer>
+	</main>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

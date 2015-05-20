@@ -373,67 +373,17 @@ header .wrap {
 }
 
 /**
-* NAVIGATION
-*/
-
-.wrap--nav {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 9;
-}
-
-nav .nav__button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: inline-block;
-    font-size: $font-size*1.6;
-    color: $font-color--inverted;
-    padding: $spacing-unit;
-    z-index: 999;
-   // text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
-}
-
-nav {
-    position: absolute;
-    top: $spacing-unit;
-    right: $spacing-unit--half;
-    display: inline-block;
-    z-index: 999999;
-    background-color: transparent; 
-    width: $spacing-unit*10;
-    border-radius: 2px;
-    overflow: hidden;
-    max-height: 50px;
-    transition: background-color .25s, ease;
-}
-
-nav.open {
-    // max-width: 500px;
-    // max-height: 500px;
-    max-height: 1000px;
-    background-color: $ui-color--shade; 
-    transition: background-color .25s, ease;
-    @include shadow();
-}
-
-nav.open .nav__button {
-    color: $brand-color;
-}
-
-nav.open .nav-list {
-    left: 0;
-    opacity: 1;
-}
+ * NAVIGATION 
+ */ 
+@import "slideout"; 
 
 .nav-list {
     position: relative;
-    left: -$spacing-unit*20;
     list-style-type: none;
-    padding-top: $spacing-unit*4;
-    opacity: 0;
-    text-align: right;
+    margin-top: $spacing-unit--double;
+    padding-top: $spacing-unit;
+    text-align: center;
+    z-index: 0;
 }
 
 nav ul.nav-list li a:hover {
@@ -451,6 +401,41 @@ nav ul.nav-list li a:hover {
     font-weight: bold;
     padding: $spacing-unit/2 $spacing-unit $spacing-unit/2 $spacing-unit;
     width: 100%;
+}
+
+.nav__button {
+    position: absolute;
+    top: $spacing-unit;
+    left: $spacing-unit;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    color: $ui-color--tint;
+    font-size: $font-size*1.5;
+    z-index: 999;
+    transition: color .25s ease;
+}
+
+.nav__button.alt {
+   color: $brand-color; 
+   transition: color .25s ease;
+}
+
+.slideout-menu {
+}
+
+
+
+/**
+ * Main Body
+ */
+
+.content {
+    background-color: $ui-color;
+}
+
+.slideout-panel {
+   box-shadow: -7px 0px 15px 0 rgba(0, 0, 0, 0.1); 
 }
 
 /**

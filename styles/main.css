@@ -425,57 +425,43 @@ header .wrap {
   text-align: left; }
 
 /**
-* NAVIGATION
-*/
-.wrap--nav {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 9; }
+ * NAVIGATION 
+ */
+body {
+  width: 100%;
+  height: 100%; }
 
-nav .nav__button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: inline-block;
-  font-size: 25.6px;
-  color: #fff;
-  padding: 15px;
-  z-index: 999; }
-
-nav {
-  position: absolute;
-  top: 15px;
-  right: 7.5px;
-  display: inline-block;
-  z-index: 999999;
-  background-color: transparent;
-  width: 150px;
-  border-radius: 2px;
-  overflow: hidden;
-  max-height: 50px;
-  transition: background-color 0.25s, ease; }
-
-nav.open {
-  max-height: 1000px;
-  background-color: #d4d4d4;
-  transition: background-color 0.25s, ease;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); }
-
-nav.open .nav__button {
-  color: #a66; }
-
-nav.open .nav-list {
+.slideout-menu {
+  position: fixed;
   left: 0;
-  opacity: 1; }
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: 256px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: none; }
+
+.slideout-panel {
+  position: relative;
+  z-index: 1; }
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden; }
+
+.slideout-open .slideout-menu {
+  display: block; }
 
 .nav-list {
   position: relative;
-  left: -300px;
   list-style-type: none;
-  padding-top: 60px;
-  opacity: 0;
-  text-align: right; }
+  margin-top: 30px;
+  padding-top: 15px;
+  text-align: center;
+  z-index: 0; }
 
 nav ul.nav-list li a:hover {
   color: #eee;
@@ -490,6 +476,31 @@ nav ul.nav-list li a:hover {
   font-weight: bold;
   padding: 7.5px 15px 7.5px 15px;
   width: 100%; }
+
+.nav__button {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  color: white;
+  font-size: 24px;
+  z-index: 999;
+  transition: color 0.25s ease; }
+
+.nav__button.alt {
+  color: #a66;
+  transition: color 0.25s ease; }
+
+/**
+ * Main Body
+ */
+.content {
+  background-color: #eee; }
+
+.slideout-panel {
+  box-shadow: -7px 0px 15px 0 rgba(0, 0, 0, 0.1); }
 
 /**
 * Notifications
