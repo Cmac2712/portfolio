@@ -1,18 +1,26 @@
- define(function() {
+ define(['svg', 'svgConfig', 'helper'], function(svg, svgConfig, $$) {
 
         /**
          * @desc Our menu button
          */
-
-        var menuToggle   = document.getElementById('navButton'),
+	
+        var menuToggle   = document.getElementById('navButtonIcon'),
 	    menuItems    = document.getElementById('navList'),
-	    headerHeight = document.getElementById('header').offsetHeight; 
+	    headerHeight = document.getElementById('header').offsetHeight, 
+	    menuIcon     = document.getElementById('navButtonIcon'),
+	    menuIconAnimation = new svg(navButtonIcon, svgConfig, {
+		size: { w: 32, h: 32 }
+	    });
+
+
+
         /**
          * @desc Open/close menu
          */
 
         function bindListeners(slide) { 
 	    menuToggle.addEventListener('click', function () {
+		this.classList.toggle('active');
 		slide.toggle();	
 	    });
 
@@ -22,10 +30,6 @@
 		});
 	    });
         }
-
-	function () {
-	    
-	}
 
 	function init(slide) {
 	    bindListeners(slide);

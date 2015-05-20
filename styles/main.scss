@@ -413,12 +413,15 @@ nav ul.nav-list li a:hover {
     color: $ui-color--tint;
     font-size: $font-size*1.5;
     z-index: 999;
-    transition: color .25s ease;
 }
 
-.nav__button.alt {
-   color: $brand-color; 
-   transition: color .25s ease;
+.nav__button svg path {
+   transition: stroke .25s ease;
+}
+
+.nav__button.active svg path {
+   stroke: $brand-color; 
+   transition: stroke .25s ease;
 }
 
 .slideout-menu {

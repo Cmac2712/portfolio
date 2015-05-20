@@ -486,12 +486,14 @@ nav ul.nav-list li a:hover {
   outline: 0;
   color: white;
   font-size: 24px;
-  z-index: 999;
-  transition: color 0.25s ease; }
+  z-index: 999; }
 
-.nav__button.alt {
-  color: #a66;
-  transition: color 0.25s ease; }
+.nav__button svg path {
+  transition: stroke 0.25s ease; }
+
+.nav__button.active svg path {
+  stroke: #a66;
+  transition: stroke 0.25s ease; }
 
 /**
  * Main Body
