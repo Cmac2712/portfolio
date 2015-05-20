@@ -1,18 +1,11 @@
-requirejs(['ui', 'slideout'],
-	function ( UI, Slideout ) {
+requirejs(['ui'],
+	function ( UI ) {
 	    
 	    HTMLCollection.prototype.forEach = function (func) {
 	        Array.prototype.forEach.call(this, func); 
 	    };
-
-	    var slide = new Slideout({
-		'panel': document.getElementById('panel'),
-	        'menu': document.getElementById('menu'),
-	        'padding': 256,
-	        'tolerance': 70
-	    });
 	    
-	    UI.init(slide);
+	    UI.init();
 	    
 	    /**
 	     *  A friendly message

@@ -1,4 +1,4 @@
- define(['svg', 'svgConfig', 'helper'], function(svg, svgConfig, $$) {
+ define(['svg', 'svgConfig', 'helper', 'slideout'], function(svg, svgConfig, $$, Slideout) {
 
         /**
          * @desc Our menu button
@@ -10,15 +10,19 @@
 	    menuIcon     = document.getElementById('navButtonIcon'),
 	    menuIconAnimation = new svg(navButtonIcon, svgConfig, {
 		size: { w: 32, h: 32 }
-	    });
-
-
+	    }),
+	    slide = new Slideout({
+	    'panel': document.getElementById('panel'),
+	    'menu': document.getElementById('menu'),
+	    'padding': 256,
+	    'tolerance': 70
+	});
 
         /**
          * @desc Open/close menu
          */
 
-        function bindListeners(slide) { 
+        function bindListeners() { 
 	    menuToggle.addEventListener('click', function () {
 		this.classList.toggle('active');
 		slide.toggle();	
@@ -32,7 +36,7 @@
         }
 
 	function init(slide) {
-	    bindListeners(slide);
+	    bindListeners();
 	}
 
         return {
