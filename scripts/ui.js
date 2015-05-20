@@ -35,8 +35,14 @@
 	    });
         }
 
-	function init(slide) {
+	function initMenu () {
+	    console.log('menu loaded')
+	    document.getElementById('menu').style.display = "block";
+	}
+
+	function init() {
 	    bindListeners();
+	    initMenu();
 	}
 
         return {
