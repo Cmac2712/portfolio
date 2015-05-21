@@ -1,9 +1,6 @@
 requirejs(['ui'],
 	function ( UI ) {
 	    
-	    HTMLCollection.prototype.forEach = function (func) {
-	        Array.prototype.forEach.call(this, func); 
-	    };
 	    
 	    UI.init();
 	    

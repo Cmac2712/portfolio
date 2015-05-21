@@ -2,6 +2,11 @@ define(function () {
 
 	"use strict"
 
+	// Allows us to use document.getElementsByClassName.forEach(...) or similar
+	HTMLCollection.prototype.forEach = function (func) {
+	    Array.prototype.forEach.call(this, func); 
+	};
+
 	/*** helper functions ***/
 
 	// from https://github.com/desandro/classie/blob/master/classie.js

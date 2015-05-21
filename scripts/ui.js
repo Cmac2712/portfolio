@@ -1,13 +1,10 @@
  define(['svg', 'svgConfig', 'helper', 'slideout'], function(svg, svgConfig, $$, Slideout) {
-
-        /**
-         * @desc Our menu button
-         */
 	
-        var menuToggle   = document.getElementById('navButtonIcon'),
-	    menuItems    = document.getElementById('navList'),
-	    headerHeight = document.getElementById('header').offsetHeight, 
-	    menuIcon     = document.getElementById('navButtonIcon'),
+        var menuToggle    = document.getElementById('navButtonIcon'),
+	    menuItems     = document.getElementById('navList'),
+	    headerHeight  = document.getElementById('header').offsetHeight, 
+	    menuIcon      = document.getElementById('navButtonIcon'),
+	    slideoutPanel = document.getElementById('panel'),
 	    menuIconAnimation = new svg(navButtonIcon, svgConfig, {
 		size: { w: 32, h: 32 }
 	    }),
@@ -15,17 +12,20 @@
 	    'panel': document.getElementById('panel'),
 	    'menu': document.getElementById('menu'),
 	    'padding': 256,
-	    'tolerance': 70
+	    'tolerance': 70,
+	    'touch': false
 	});
 
         /**
-         * @desc Open/close menu
+	 * @desc Add event listeners to the page
          */
 
         function bindListeners() { 
+	    
+	    //Open/close menu
 	    menuToggle.addEventListener('click', function () {
-		this.classList.toggle('active');
-		slide.toggle();	
+		slide.toggle();
+		panel.classList.toggle('open');
 	    });
 
 	    menuItems.children.forEach(function (item) {
@@ -33,10 +33,23 @@
 		    slide.close();
 		});
 	    });
+	    
+	    // Add acitve class to hamburger icon
+	    slide.on('beforeopen', function () {
+		menuToggle.classList.add('active');
+	    }).on('beforeclose', function () {
+		menuToggle.classList.remove('active');
+	    });
         }
+	
+	
+	/**
+	 * @desc Initiates the menu once javascript is loaded.
+	 *	 This prevents the menu from appearing before slideout.js has 
+	 *	 had chance to position the menu.
+	 */
 
 	function initMenu () {
-	    console.log('menu loaded')
 	    document.getElementById('menu').style.display = "block";
 	}
 
