@@ -25,20 +25,22 @@
 	    //Open/close menu
 	    menuToggle.addEventListener('click', function () {
 		slide.toggle();
-		panel.classList.toggle('open');
 	    });
 
 	    menuItems.children.forEach(function (item) {
 		item.addEventListener('click', function () {
 		    slide.close();
+		    menuIconAnimation.toggle();
 		});
 	    });
 	    
 	    // Add acitve class to hamburger icon
 	    slide.on('beforeopen', function () {
 		menuToggle.classList.add('active');
+		panel.classList.add('open');
 	    }).on('beforeclose', function () {
 		menuToggle.classList.remove('active');
+		panel.classList.remove('open');
 	    });
         }
 	
