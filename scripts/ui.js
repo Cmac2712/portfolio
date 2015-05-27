@@ -1,30 +1,31 @@
  define(['svg', 'svgConfig', 'helper', 'slideout'], function(svg, svgConfig, $$, Slideout) {
 	
         var menuToggle    = document.getElementById('navButtonIcon'),
-	    menuItems     = document.getElementById('navList'),
-	    headerHeight  = document.getElementById('header').offsetHeight, 
-	    menuIcon      = document.getElementById('navButtonIcon'),
-	    slideoutPanel = document.getElementById('panel'),
-	    menuIconAnimation = new svg(navButtonIcon, svgConfig, {
-		size: { w: 32, h: 32 }
-	    }),
-	    slide = new Slideout({
-	    'panel': document.getElementById('panel'),
-	    'menu': document.getElementById('menu'),
-	    'padding': 256,
-	    'tolerance': 70,
-	    'touch': false
-	});
+            menuItems     = document.getElementById('navList'),
+            headerHeight  = document.getElementById('header').offsetHeight,
+            menuIcon      = document.getElementById('navButtonIcon'),
+            slideoutPanel = document.getElementById('panel'),
+            menuIconAnimation = new svg(navButtonIcon, svgConfig, {
+            size: { w: 32, h: 32 }
+            }),
+            slide = new Slideout({
+                'panel': document.getElementById('panel'),
+                'menu': document.getElementById('menu'),
+                'padding': 256,
+                'tolerance': 70,
+                'touch': false
+			});
 
-        /**
-	 * @desc Add event listeners to the page
-         */
+	 /**
+	  * @desc Add event listeners to the page
+	  */
 
         function bindListeners() { 
 	    
 	    //Open/close menu
 	    menuToggle.addEventListener('click', function () {
-		slide.toggle();
+			slide.toggle();
+			menuIconAnimation.toggle(true);
 	    });
 
 	    menuItems.children.forEach(function (item) {

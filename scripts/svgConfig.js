@@ -67,7 +67,7 @@ define({
 				} 
 			},
 			{ 
-				el : 'path:nth-child(3)', 
+				el : 'path:nth-child(3)',
 				animProperties : { 
 					from : { val : '{"transform" : "t0 0"}' }, 
 					to : { val : '{"transform" : "t-5 5"}' }

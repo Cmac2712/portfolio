@@ -55,7 +55,7 @@ define(['helper', 'snap.svg'], function ($$, Snap) {
 			this.el.addEventListener( 'mouseout', toggleFn );
 		}
 		else {
-			this.el.addEventListener( this.clickevent, toggleFn );
+			//this.el.addEventListener( this.clickevent, toggleFn );
 		}
 	};
 
@@ -83,7 +83,7 @@ define(['helper', 'snap.svg'], function ($$, Snap) {
 							this.animate( JSON.parse( animProp.animAfter ), self.options.speed, self.options.easing );
 						}
 					} ); }; 
-				}( el, val, animProp ), timeout * self.options.speed );
+				}( el,val,animProp ), timeout * self.options.speed );
 			}
 			else {
 				el.attr( JSON.parse( val ) );
