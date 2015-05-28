@@ -1,3 +1,10 @@
+styles/*.swn
+idea/
+.idea/
+node_modules
 styles/.sass-cache/
-*.swp
-*.swo
+styles/.main.scss.swo/
+.index.html.swn
+.index.html.swo
+.index.html.swp
+styles/.main.scss.swo
