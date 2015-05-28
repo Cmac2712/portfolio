@@ -487,7 +487,12 @@ nav ul.nav-list li a:hover {
   color: white;
   font-size: 24px;
   z-index: 999;
-  cursor: pointer; }
+  cursor: pointer;
+  opacity: 0; }
+
+.nav__button.fadein {
+  opacity: 1;
+  transition: opacity 0.5s ease; }
 
 .nav__button svg path {
   transition: stroke 0.25s ease; }
@@ -658,12 +663,12 @@ nav ul.nav-list li a:hover {
   transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1); }
 
 .work-wrap a {
-  color: #444; }
+  color: #666; }
   .work-wrap a:hover,
   .work-wrap a:visited,
   .work-wrap a:focus,
   .work-wrap a:active {
-    color: #444; }
+    color: #666; }
 
 .work {
   max-width: 68em;

@@ -377,6 +377,7 @@ header .wrap {
  */ 
 @import "slideout"; 
 
+
 .nav-list {
     position: relative;
     list-style-type: none;
@@ -414,6 +415,12 @@ nav ul.nav-list li a:hover {
     font-size: $font-size*1.5;
     z-index: 999;
     cursor: pointer;
+    opacity: 0;
+}
+
+.nav__button.fadein {
+    opacity: 1;
+    transition: opacity .5s ease;
 }
 
 .nav__button svg path {
@@ -622,13 +629,13 @@ nav ul.nav-list li a:hover {
 }
 
 .work-wrap a {
-    color: $heading-color;
+    color: $font-color;
 
     &:hover,
     &:visited,
     &:focus,
     &:active {
-	color: $heading-color;  
+	color: $font-color;  
     }
 }
 
