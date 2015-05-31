@@ -714,6 +714,12 @@ nav ul.nav-list li a:hover {
 .scc .work__image {
   background-image: url(../images/scc.jpg); }
 
+.wallpaper .work__image {
+  background-image: url(../images/wallpaper.jpg); }
+
+.notification .work__image {
+  background-image: url(../images/notification.jpg); }
+
 /**
  * CONTACT SECTION
  */
