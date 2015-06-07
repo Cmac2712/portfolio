@@ -432,6 +432,13 @@ header .wrap {
     bottom: 0;
     left: $spacing-unit;
     text-align: left;
+    transition: opacity .5s ease;
+    opacity: 0;
+}
+
+.header--title.fadein {
+    opacity: 1;
+    transition: opacity .5s ease;
 }
 
 /**

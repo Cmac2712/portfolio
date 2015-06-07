@@ -55,6 +55,7 @@
 	function initMenu () {
 	    document.getElementById('menu').style.display = "block";
 	    document.getElementById('navButtonIcon').classList.add('fadein');
+	    document.getElementsByClassName('header--title')[0].classList.add('fadein');
 	}
 
 	function init() {
