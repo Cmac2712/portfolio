@@ -490,8 +490,8 @@ COMPONENTS
 
 \*-----------------------------*/
 /**
-* HEADER
-*/
+ * HEADER
+ */
 header {
   position: relative;
   height: 225px;
@@ -616,8 +616,17 @@ nav ul.nav-list li a:hover {
   box-shadow: -7px 0px 15px 0 rgba(0, 0, 0, 0.1); }
 
 .slideout-panel:after {
-  background-color: transparent;
-  transition: background-color 5s ease; }
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  -webkit-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease; }
 
 .slideout-panel.open:after {
   content: "";
@@ -628,7 +637,9 @@ nav ul.nav-list li a:hover {
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 999;
-  transition: background-color 5s ease; }
+  opacity: 1;
+  -webkit-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease; }
 
 /**
  * PROFILE
