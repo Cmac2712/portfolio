@@ -1,63 +1,63 @@
 /**
-*
-* @author Craig MacIntre
-* @email cmac2712@gmail.com
-*
-* CONTENTS
-* 
-* PREFACE
-* itcss..........................................Inverse Triangle CSS
-* BEM............................................Block Element Modifier naming convention
-*
-* SETTINGS
-* Typography.....................................Fonts and font stacks
-* Colors.........................................Set our brand color and UI colors
-* Spacing........................................Base spacing units for nice even spacing
-*
-* TOOLS
-* Mixins.........................................Usefull mixins
-* Bourbon........................................Library of Mixins and functions (bourbon.io)
-* Neat...........................................Grid system base on mixins for more semantic HTML (neat.bourbon.io)
-
-* GENERIC
-* Box Sizing.....................................Set box-sizing: border-box;
-* Breakpoints....................................Media Queries for different screen sizes (technically should be in settings but we need to include it after Neat)
-* Browse Happy...................................Styling for Browse Happy for unsupported browsers
-*
-* BASE
-* body...........................................Set up our root styles
-* h1-h6..........................................Headers
-* ul.............................................Lists
-* a..............................................Links
-*
-* OBJECTS
-* Wrap...........................................Keep our content contained to a max-width
-* Underline......................................Underlines for headers
-* Buttons........................................Material Design style buttons
-* Grid...........................................Grid classes (built with Neat)
-* Logos
-*
-* COMPONENTS
-* Header.........................................Header area
-* Navigation.....................................Slideout.js nav menu
-* Main Body......................................Body backgroud color and slideout panel styles
-* Profile........................................Profile picture
-* About Section..................................Short Description about myself
-* Work Section...................................List of some of my projects
-* Contact Section................................Contact information
-* Footer.........................................Footer area
-*
-* TRUMPS
-* Vertical Centering.............................Ghost element inline-block vertical-align: middle for aligning elements
-* Positioning....................................Absolute/relative positionsa
-* Floats.........................................Add/remove floats
-* Text Alignments................................Align text left/right/center
-* Font Weights...................................Change font weights
-* Margins/Padding................................Add/Remove margins and padding
-* .brandColor....................................Last class in the stylesheet so it can easily be found with javascript
-*
-*
-*/
+ * craigmacintyre.co.uk
+ * @author Craig MacIntre
+ * @email cmac2712@gmail.com
+ *
+ * CONTENTS
+ * 
+ * PREFACE
+ * itcss..........................................Inverse Triangle CSS
+ * BEM............................................Block Element Modifier naming convention
+ *
+ * SETTINGS
+ * Typography.....................................Fonts and font stacks
+ * Colors.........................................Set our brand color and UI colors
+ * Spacing........................................Base spacing units for nice even spacing
+ *
+ * TOOLS
+ * Mixins.........................................Usefull mixins
+ * Bourbon........................................Library of Mixins and functions (bourbon.io)
+ * Neat...........................................Grid system base on mixins for more semantic HTML (neat.bourbon.io)
+ 
+ * GENERIC
+ * Box Sizing.....................................Set box-sizing: border-box;
+ * Breakpoints....................................Media Queries for different screen sizes (technically should be in settings but we need to include it after Neat)
+ * Browse Happy...................................Styling for Browse Happy for unsupported browsers
+ *
+ * BASE
+ * body...........................................Set up our root styles
+ * h1-h6..........................................Headers
+ * ul.............................................Lists
+ * a..............................................Links
+ *
+ * OBJECTS
+ * Wrap...........................................Keep our content contained to a max-width
+ * Underline......................................Underlines for headers
+ * Buttons........................................Material Design style buttons
+ * Grid...........................................Grid classes (built with Neat)
+ * Logos
+ *
+ * COMPONENTS
+ * Header.........................................Header area
+ * Navigation.....................................Slideout.js nav menu
+ * Main Body......................................Body backgroud color and slideout panel styles
+ * Profile........................................Profile picture
+ * About Section..................................Short Description about myself
+ * Work Section...................................List of some of my projects
+ * Contact Section................................Contact information
+ * Footer.........................................Footer area
+ *
+ * TRUMPS
+ * Vertical Centering.............................Ghost element inline-block vertical-align: middle for aligning elements
+ * Positioning....................................Absolute/relative positionsa
+ * Floats.........................................Add/remove floats
+ * Text Alignments................................Align text left/right/center
+ * Font Weights...................................Change font weights
+ * Margins/Padding................................Add/Remove margins and padding
+ * .brandColor....................................Last class in the stylesheet so it can easily be found with javascript
+ *
+ *
+ */
 /*----------------------------------------------------------------
 
     ITCSS http://itcss.io/
@@ -590,7 +590,7 @@ nav ul.nav-list li a:hover {
   outline: 0;
   color: white;
   font-size: 24px;
-  z-index: 999;
+  z-index: 9999;
   cursor: pointer;
   opacity: 0; }
 
@@ -602,7 +602,7 @@ nav ul.nav-list li a:hover {
   transition: stroke 0.25s ease; }
 
 .nav__button.active svg path {
-  stroke: #a66;
+  stroke: #a77;
   transition: stroke 0.25s ease; }
 
 /**
