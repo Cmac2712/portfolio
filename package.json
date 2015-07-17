@@ -4,7 +4,7 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha"
+    "test": "./node_modules/mocha-casperjs/bin/mocha-casperjs ./test/test.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,12 @@
   },
   "homepage": "https://github.com/cmac2712/portfolio",
   "devDependencies": {
+    "casper-chai": "^0.2.1",
+    "casperjs": "^1.1.0-beta3",
+    "chai": "^3.1.0",
     "gulp": "^3.8.11",
-    "mocha": "^2.2.5"
+    "mocha": "^2.2.5",
+    "mocha-casperjs": "^0.5.4",
+    "phantomjs": "^1.9.17"
   }
 }
