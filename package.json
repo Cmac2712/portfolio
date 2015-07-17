@@ -4,7 +4,7 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "./node_modules/mocha-casperjs/bin/mocha-casperjs ./test/test.js"
+    "test": "./node_modules/casperjs/bin/casperjs test ./test/test.js"
   },
   "repository": {
     "type": "git",
