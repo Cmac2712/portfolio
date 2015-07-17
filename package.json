@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/cmac2712/portfolio",
   "devDependencies": {
-    "gulp": "^3.8.11"
+    "gulp": "^3.8.11",
+    "mocha": "^2.2.5"
   }
 }
