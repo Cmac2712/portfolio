@@ -41,12 +41,11 @@
 		
             </header>
 
-            <article id="about" class="wrap about">
-		           
-                <h2 class="underline">About</h2>
-               <p>I am a developer passionate about web technology who is always looking for new opportunities and ideas.
-                Currently I am working at INDEZ creating cutting-edge ecommerce websites.</p>
-            </article>
+            <!-- <article id="about" class="wrap about"> -->
+            <!--    <h2 class="underline">About</h2> -->
+            <!--    <p>I am a developer passionate about web technology who is always looking for new opportunities and ideas. -->
+            <!--     Currently I am working at INDEZ creating cutting-edge ecommerce websites.</p> -->
+            <!-- </article> -->
 
             <section id="skills" class="wrap">
                 <h2 class="underline">Skills</h2>
@@ -131,52 +130,52 @@
                                
             </section>
 
-            <section id="projects" class="wrap">
-                <h2 class="underline">Projects I've Worked On</h2>
+            <!-- <section id="projects" class="wrap"> -->
+            <!--     <h2 class="underline">Projects I've Worked On</h2> -->
 
-                <div class="grid-container">
-                    <div class="column-4">
-			    <div class="work__block gdc">
-				<a href="https://glasgowdistillery.com">
-				    <div class="work__image">
+            <!--     <div class="grid-container"> -->
+            <!--         <div class="column-4"> -->
+			    <!-- <div class="work__block gdc"> -->
+				<!-- <a href="https://glasgowdistillery.com"> -->
+				    <!-- <div class="work__image"> -->
 					
-				    </div>
-				    <div class="work__desc">
-				    <h3>Glasgow Distillery</h3>
-					<p>The first new distillery in the city of Glasgow for over 100 years. Home of Makar Gin.
-					Glasgow Distillery Company's website utilises responsive design for an equal experience across all devices and platforms.</p>
-				    </div>
-				</a>
-			    </div>
-                    </div>
-                    <div class="column-4">
-                        <div class="work__block indez">
-			  <a href="http://indez.com">
-                            <div class="work__image">
+				    <!-- </div> -->
+				    <!-- <div class="work__desc"> -->
+				    <!-- <h3>Glasgow Distillery</h3> -->
+					<!-- <p>The first new distillery in the city of Glasgow for over 100 years. Home of Makar Gin. -->
+					<!-- Glasgow Distillery Company's website utilises responsive design for an equal experience across all devices and platforms.</p> -->
+				    <!-- </div> -->
+				<!-- </a> -->
+			    <!-- </div> -->
+            <!--         </div> -->
+            <!--         <div class="column-4"> -->
+            <!--             <div class="work__block indez"> -->
+			  <!-- <a href="http://indez.com"> -->
+            <!--                 <div class="work__image"> -->
                                 
-                            </div>
-                            <div class="work__desc">
-                            <h3>INDEZ</h3>
-                                <p>Fully responsive and featuring many interactive components.</p>
-                            </div>
-			  </a>
-                        </div>
-                    </div>
-                    <div class="column-4">
-                        <div class="work__block scc">
-			    <a href="https://github.com/cmac2712/samanthacotoncreative">
-                            <div class="work__image">
+            <!--                 </div> -->
+            <!--                 <div class="work__desc"> -->
+            <!--                 <h3>INDEZ</h3> -->
+            <!--                     <p>Fully responsive and featuring many interactive components.</p> -->
+            <!--                 </div> -->
+			  <!-- </a> -->
+            <!--             </div> -->
+            <!--         </div> -->
+            <!--         <div class="column-4"> -->
+            <!--             <div class="work__block scc"> -->
+			    <!-- <a href="https://github.com/cmac2712/samanthacotoncreative"> -->
+            <!--                 <div class="work__image"> -->
                                 
-                            </div>
-                            <div class="work__desc">
-                            <h3>Samantha Coton Creative</h3>
-                                <p>Samantha Coton Creative is an original Wordpress theme I created for a Product Design student's portfolio. </p>
-                            </div>
-			    </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <!--                 </div> -->
+            <!--                 <div class="work__desc"> -->
+            <!--                 <h3>Samantha Coton Creative</h3> -->
+            <!--                     <p>Samantha Coton Creative is an original Wordpress theme I created for a Product Design student's portfolio. </p> -->
+            <!--                 </div> -->
+			    <!-- </a> -->
+            <!--             </div> -->
+            <!--         </div> -->
+            <!--     </div> -->
+            <!-- </section> -->
 
 	    <section id="experiments" class="wrap">
                 <h2 class="underline">Experiments</h2>
