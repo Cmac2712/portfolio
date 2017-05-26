@@ -281,17 +281,18 @@
 
                     </div>
 
-                    <div class="column-2">
+                    <!-- <div class="column-2"> -->
                     
-                        <div class="logo">
-                            <div class="logo__image">
-                                <img src="images/bower.png" alt="">
-                            </div>
-                            <div class="logo__desc">
-                                <h3>Bower</h3>
-                            </div>
-                        </div>
-                    </div>
+                    <!--     <div class="logo"> -->
+                    <!--         <div class="logo__image"> -->
+                    <!--             <img src="images/bower.png" alt=""> -->
+                    <!--         </div> -->
+                    <!--         <div class="logo__desc"> -->
+                    <!--             <h3>Bower</h3> -->
+                    <!--         </div> -->
+                    <!--     </div> -->
+		           
+                    <!-- </div> -->
                         
                     <div class="column-2">
                     
@@ -319,18 +320,18 @@
 
                     </div>
                         
-                    <div class="column-2">
+                    <!-- <div class="column-2"> -->
                     
-                        <div class="logo">
-                            <div class="logo__image">
-                                <img src="images/yeoman.png" alt="">
-                            </div>
-                            <div class="logo__desc">
-                                <h3>Yo</h3>
-                            </div>
-                        </div>
+                    <!--     <div class="logo"> -->
+                    <!--         <div class="logo__image"> -->
+                    <!--             <img src="images/yeoman.png" alt=""> -->
+                    <!--         </div> -->
+                    <!--         <div class="logo__desc"> -->
+                    <!--             <h3>Yo</h3> -->
+                    <!--         </div> -->
+                    <!--     </div> -->
 
-                    </div>
+                    <!-- </div> -->
                         
                     <div class="column-2">
                     
