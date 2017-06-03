@@ -14,6 +14,8 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 	<!--<button id="navButton" class="nav__button icon-menu" style="display: none;"></button>-->
+
+<?php /**
 	<nav id="menu" style="display: none;">
 	    <ul id="navList" class="nav-list">
 		<li><a href="#about">About</a></li>
@@ -24,9 +26,12 @@
 		<li><a href="#contact">Contact</a></li>
 	    </ul>
 	</nav>
+**/ ?>
 
 	<main id="panel" class="content">
-	<span id="navButtonIcon" class="nav__button" data-icon-name="hamburgerCross"></span>
+	<?php
+	## <span id="navButtonIcon" class="nav__button" data-icon-name="hamburgerCross"></span>
+	?>
 
 
 	    <header id="header" class="text--center posrel"> 

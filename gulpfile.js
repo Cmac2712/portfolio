@@ -5,12 +5,12 @@ var sass   = require('gulp-sass');
 
 gulp.task('serve', function () {
     bs.init({
-	proxy: 'porfolio.dev'
+	proxy: 'portfolio.dev'
     }); 
 
     gulp.watch("./styles/*.scss", ['sass']);
     gulp.watch("./scripts/*.js").on('change', reload);
-    gulp.watch("./*.html").on('change', reload);
+    gulp.watch("./*.php").on('change', reload);
     gulp.watch("./styles/*").on('change', reload);
 });
 

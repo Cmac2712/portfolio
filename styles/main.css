@@ -289,9 +289,7 @@ html {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit; }
@@ -340,8 +338,8 @@ li {
 a:link {
   color: #22a;
   text-decoration: none;
-  -webkit-transition: color, 0.25s;
-  transition: color, 0.25s; }
+  -webkit-transition: color, .25s;
+  transition: color, .25s; }
 
 a:hover,
 a:visited,
@@ -349,8 +347,8 @@ a:focus,
 a:active {
   text-decoration: none;
   color: #72a;
-  -webkit-transition: color, 0.25s;
-  transition: color, 0.25s; }
+  -webkit-transition: color, .25s;
+  transition: color, .25s; }
 
 /*-----------------------------*
 OBJECTS 
@@ -521,11 +519,11 @@ header .wrap {
   bottom: 0;
   left: 15px;
   text-align: left;
-  transition: opacity 0.5s ease; }
+  transition: opacity .5s ease; }
 
 .header--title.fadein {
   opacity: 1;
-  transition: opacity 0.5s ease; }
+  transition: opacity .5s ease; }
 
 /**
  * NAVIGATION 
@@ -594,14 +592,14 @@ nav ul.nav-list li a:hover {
 
 .nav__button.fadein {
   opacity: 1;
-  transition: opacity 0.5s ease; }
+  transition: opacity .5s ease; }
 
 .nav__button svg path {
-  transition: stroke 0.25s ease; }
+  transition: stroke .25s ease; }
 
 .nav__button.active svg path {
   stroke: #a77;
-  transition: stroke 0.25s ease; }
+  transition: stroke .25s ease; }
 
 /**
  * Main Body
@@ -623,8 +621,8 @@ nav ul.nav-list li a:hover {
   pointer-events: none;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
-  -webkit-transition: opacity 0.25s ease;
-  transition: opacity 0.25s ease; }
+  -webkit-transition: opacity .25s ease;
+  transition: opacity .25s ease; }
 
 .slideout-panel.open:after {
   content: "";
@@ -636,8 +634,8 @@ nav ul.nav-list li a:hover {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 999;
   opacity: 1;
-  -webkit-transition: opacity 0.25s ease;
-  transition: opacity 0.25s ease; }
+  -webkit-transition: opacity .25s ease;
+  transition: opacity .25s ease; }
 
 /**
  * PROFILE
@@ -654,7 +652,7 @@ nav ul.nav-list li a:hover {
   background-image: url(../images/me.jpg);
   background-size: cover;
   z-index: 9;
-  border: 5px solid #d4d4d4; }
+  border: 5px solid #d5d5d5; }
 
 /**
  * ABOUT SECTION
@@ -684,10 +682,7 @@ nav ul.nav-list li a:hover {
 
 .work__block a {
   color: #666; }
-  .work__block a:hover,
-  .work__block a:visited,
-  .work__block a:focus,
-  .work__block a:active {
+  .work__block a:hover, .work__block a:visited, .work__block a:focus, .work__block a:active {
     color: #666; }
 
 .work__image {
@@ -772,7 +767,7 @@ nav ul.nav-list li a:hover {
 footer {
   text-align: right;
   margin-top: 45px;
-  background-color: #d4d4d4; }
+  background-color: #d5d5d5; }
 
 /*-----------------------------*
 TRUMPS
