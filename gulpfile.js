@@ -5,9 +5,7 @@ var sass   = require('gulp-sass');
 
 gulp.task('serve', function () {
     bs.init({
-	server: {
-	    baseDir: "./"
-	}
+	proxy: 'porfolio.dev'
     }); 
 
     gulp.watch("./styles/*.scss", ['sass']);
