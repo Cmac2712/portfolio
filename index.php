@@ -215,7 +215,7 @@
 
 		    <div class="column-4">
 			    <div class="work__block site-3">
-				<a href="">
+				<a href="https://indez.com/">
 				    <div class="work__image">
 
 				    </div>
