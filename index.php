@@ -182,6 +182,54 @@
             <!--     </div> -->
             <!-- </section> -->
 
+	    <section id="sites" class="wrap sites">
+		<h2 class="underline">Sites</h2>
+
+		<div class="grid-container">
+
+		    <div class="column-4">
+			    <div class="work__block site-1">
+				<a href="https://smws.com/">
+				    <div class="work__image">
+
+				    </div>
+				    <div class="work__desc">
+					<h3>Scotch Malt Whisky Society</h3>
+				    </div>
+				</a>
+			    </div>
+		    </div>
+
+		    <div class="column-4">
+			    <div class="work__block site-2">
+				<a href="https://laingsuk.com/">
+				    <div class="work__image">
+
+				    </div>
+				    <div class="work__desc">
+					<h3>Laings the Jewellers</h3>
+				    </div>
+				</a>
+			    </div>
+		    </div>
+
+		    <div class="column-4">
+			    <div class="work__block site-3">
+				<a href="">
+				    <div class="work__image">
+
+				    </div>
+				    <div class="work__desc">
+				    <h3>INDEZ</h3>
+				    </div>
+				</a>
+			    </div>
+		    </div>
+
+		</div>
+
+	    </section>
+
 	    <section id="experiments" class="wrap">
                 <h2 class="underline">Experiments</h2>
 

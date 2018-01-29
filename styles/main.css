@@ -733,6 +733,21 @@ nav ul.nav-list li a:hover {
 .animation .work__image {
   background-image: url(../images/animation.jpg); }
 
+.site-1 .work__image {
+  background-image: url(../images/smws-cropped.png); }
+
+.site-2 .work__image {
+  background-image: url(../images/laings-cropped.png); }
+
+.site-3 .work__image {
+  background-image: url(../images/indez.png); }
+
+/**
+ * SITES 
+ */
+.sites .work__desc {
+  min-height: 100px; }
+
 /**
  * CONTACT SECTION
  */
