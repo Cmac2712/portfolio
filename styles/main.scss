@@ -555,6 +555,7 @@ nav ul.nav-list li a:hover {
     width: 125px;
     height: 125px;
     border-radius: 50%;
+	background-color: $ui-color--shade;
     background-image: url(../images/me.jpg);
     background-size: cover;
     z-index: 9;
