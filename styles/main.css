@@ -308,11 +308,13 @@ GENERIC
 BASE
 
 \*-----------------------------*/
+html,
 body {
   font-family: "latoregular", helvetica, sans-serif;
   color: #666;
   background-color: #eee;
-  font-size: 16px; }
+  font-size: 16px;
+  min-width: 320px; }
 
 body:after {
   content: "";
@@ -520,7 +522,11 @@ header .wrap {
   bottom: 0;
   left: 15px;
   text-align: left;
-  transition: opacity .5s ease; }
+  transition: opacity .5s ease;
+  max-width: 200px; }
+  @media screen and (min-width: 500px) {
+    .header--title {
+      max-width: 100%; } }
 
 .header--title.fadein {
   opacity: 1;

@@ -224,11 +224,13 @@ BASE
 \*-----------------------------*/
 
 
+html, 
 body {
     font-family: $font-stack;
     color: $font-color;
     background-color: $ui-color;
     font-size: $font-size;
+	min-width: 320px;
 }
 
 body:after {
@@ -434,6 +436,11 @@ header .wrap {
     left: $spacing-unit;
     text-align: left;
     transition: opacity .5s ease;
+	max-width: 200px;
+
+	@media screen and (min-width: 500px) {
+		max-width: 100%;
+	}
 }
 
 .header--title.fadein {
