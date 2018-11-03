@@ -355,6 +355,7 @@ OBJECTS
 
 \*-----------------------------*/
 .wrap {
+  position: relative;
   max-width: 1070px;
   padding: 15px;
   margin: 0 auto;
@@ -643,11 +644,11 @@ nav ul.nav-list li a:hover {
 .profile {
   position: absolute;
   bottom: -37.5px;
-  left: 0;
-  right: 0;
+  left: auto;
+  right: 15px;
   margin: 0 auto;
-  width: 100px;
-  height: 100px;
+  width: 125px;
+  height: 125px;
   border-radius: 50%;
   background-image: url(../images/me.jpg);
   background-size: cover;
