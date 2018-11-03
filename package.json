@@ -1,15 +1,9 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "My Porfolio Website",
   "main": "gulpfile.js",
-  "scripts": {
-    "test": "./node_modules/casperjs/bin/casperjs test ./test/test.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/cmac2712/portfolio.git"
-  },
+  "repository": "https://github.com/cmac2712/portfolio.git",
   "author": "Craig MacIntyre",
   "license": "ISC",
   "bugs": {
@@ -17,12 +11,10 @@
   },
   "homepage": "https://github.com/cmac2712/portfolio",
   "devDependencies": {
-    "casper-chai": "^0.2.1",
-    "casperjs": "^1.1.0-beta3",
-    "chai": "^3.1.0",
-    "gulp": "^3.8.11",
-    "mocha": "^2.2.5",
-    "mocha-casperjs": "^0.5.4",
-    "phantomjs": "^1.9.17"
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp-sass": "^3.1.0"
   }
 }

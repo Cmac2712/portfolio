@@ -4,6 +4,7 @@
         <meta name="description" content="Front End Developer based in Glasgow, Scotland">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="google-site-verification" content="RNC8hTSfCJ6_uDDHE1dBAQqOmzdWh5RHllgyhx-oEcM" />
 
         <link rel="stylesheet" href="styles/main.css">
 
@@ -13,6 +14,8 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 	<!--<button id="navButton" class="nav__button icon-menu" style="display: none;"></button>-->
+
+<?php /**
 	<nav id="menu" style="display: none;">
 	    <ul id="navList" class="nav-list">
 		<li><a href="#about">About</a></li>
@@ -23,9 +26,12 @@
 		<li><a href="#contact">Contact</a></li>
 	    </ul>
 	</nav>
+**/ ?>
 
 	<main id="panel" class="content">
-	<span id="navButtonIcon" class="nav__button" data-icon-name="hamburgerCross"></span>
+	<?php
+	## <span id="navButtonIcon" class="nav__button" data-icon-name="hamburgerCross"></span>
+	?>
 
 
 	    <header id="header" class="text--center posrel"> 
@@ -40,12 +46,11 @@
 		
             </header>
 
-            <article id="about" class="wrap about">
-		           
-                <h2 class="underline">About</h2>
-               <p>I am a developer passionate about web technology who is always looking for new opportunities and ideas.
-                Currently I am working at INDEZ creating cutting-edge ecommerce websites.</p>
-            </article>
+            <!-- <article id="about" class="wrap about"> -->
+            <!--    <h2 class="underline">About</h2> -->
+            <!--    <p>I am a developer passionate about web technology who is always looking for new opportunities and ideas. -->
+            <!--     Currently I am working at INDEZ creating cutting-edge ecommerce websites.</p> -->
+            <!-- </article> -->
 
             <section id="skills" class="wrap">
                 <h2 class="underline">Skills</h2>
@@ -130,52 +135,100 @@
                                
             </section>
 
-            <section id="projects" class="wrap">
-                <h2 class="underline">Projects I've Worked On</h2>
+            <!-- <section id="projects" class="wrap"> -->
+            <!--     <h2 class="underline">Projects I've Worked On</h2> -->
 
-                <div class="grid-container">
-                    <div class="column-4">
-			    <div class="work__block gdc">
-				<a href="https://glasgowdistillery.com">
-				    <div class="work__image">
+            <!--     <div class="grid-container"> -->
+            <!--         <div class="column-4"> -->
+			    <!-- <div class="work__block gdc"> -->
+				<!-- <a href="https://glasgowdistillery.com"> -->
+				    <!-- <div class="work__image"> -->
 					
+				    <!-- </div> -->
+				    <!-- <div class="work__desc"> -->
+				    <!-- <h3>Glasgow Distillery</h3> -->
+					<!-- <p>The first new distillery in the city of Glasgow for over 100 years. Home of Makar Gin. -->
+					<!-- Glasgow Distillery Company's website utilises responsive design for an equal experience across all devices and platforms.</p> -->
+				    <!-- </div> -->
+				<!-- </a> -->
+			    <!-- </div> -->
+            <!--         </div> -->
+            <!--         <div class="column-4"> -->
+            <!--             <div class="work__block indez"> -->
+			  <!-- <a href="http://indez.com"> -->
+            <!--                 <div class="work__image"> -->
+                                
+            <!--                 </div> -->
+            <!--                 <div class="work__desc"> -->
+            <!--                 <h3>INDEZ</h3> -->
+            <!--                     <p>Fully responsive and featuring many interactive components.</p> -->
+            <!--                 </div> -->
+			  <!-- </a> -->
+            <!--             </div> -->
+            <!--         </div> -->
+            <!--         <div class="column-4"> -->
+            <!--             <div class="work__block scc"> -->
+			    <!-- <a href="https://github.com/cmac2712/samanthacotoncreative"> -->
+            <!--                 <div class="work__image"> -->
+                                
+            <!--                 </div> -->
+            <!--                 <div class="work__desc"> -->
+            <!--                 <h3>Samantha Coton Creative</h3> -->
+            <!--                     <p>Samantha Coton Creative is an original Wordpress theme I created for a Product Design student's portfolio. </p> -->
+            <!--                 </div> -->
+			    <!-- </a> -->
+            <!--             </div> -->
+            <!--         </div> -->
+            <!--     </div> -->
+            <!-- </section> -->
+
+	    <section id="sites" class="wrap sites">
+		<h2 class="underline">Sites</h2>
+
+		<div class="grid-container">
+
+		    <div class="column-4">
+			    <div class="work__block site-1">
+				<a href="https://smws.com/">
+				    <div class="work__image">
+
 				    </div>
 				    <div class="work__desc">
-				    <h3>Glasgow Distillery</h3>
-					<p>The first new distillery in the city of Glasgow for over 100 years. Home of Makar Gin.
-					Glasgow Distillery Company's website utilises responsive design for an equal experience across all devices and platforms.</p>
+					<h3>Scotch Malt Whisky Society</h3>
 				    </div>
 				</a>
 			    </div>
-                    </div>
-                    <div class="column-4">
-                        <div class="work__block indez">
-			  <a href="http://indez.com">
-                            <div class="work__image">
-                                
-                            </div>
-                            <div class="work__desc">
-                            <h3>INDEZ</h3>
-                                <p>Fully responsive and featuring many interactive components.</p>
-                            </div>
-			  </a>
-                        </div>
-                    </div>
-                    <div class="column-4">
-                        <div class="work__block scc">
-			    <a href="https://github.com/cmac2712/samanthacotoncreative">
-                            <div class="work__image">
-                                
-                            </div>
-                            <div class="work__desc">
-                            <h3>Samantha Coton Creative</h3>
-                                <p>Samantha Coton Creative is an original Wordpress theme I created for a Product Design student's portfolio. </p>
-                            </div>
-			    </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+		    </div>
+
+		    <div class="column-4">
+			    <div class="work__block site-2">
+				<a href="https://laingsuk.com/">
+				    <div class="work__image">
+
+				    </div>
+				    <div class="work__desc">
+					<h3>Laings the Jewellers</h3>
+				    </div>
+				</a>
+			    </div>
+		    </div>
+
+		    <div class="column-4">
+			    <div class="work__block site-3">
+				<a href="https://indez.com/">
+				    <div class="work__image">
+
+				    </div>
+				    <div class="work__desc">
+				    <h3>INDEZ</h3>
+				    </div>
+				</a>
+			    </div>
+		    </div>
+
+		</div>
+
+	    </section>
 
 	    <section id="experiments" class="wrap">
                 <h2 class="underline">Experiments</h2>
@@ -281,17 +334,18 @@
 
                     </div>
 
-                    <div class="column-2">
+                    <!-- <div class="column-2"> -->
                     
-                        <div class="logo">
-                            <div class="logo__image">
-                                <img src="images/bower.png" alt="">
-                            </div>
-                            <div class="logo__desc">
-                                <h3>Bower</h3>
-                            </div>
-                        </div>
-                    </div>
+                    <!--     <div class="logo"> -->
+                    <!--         <div class="logo__image"> -->
+                    <!--             <img src="images/bower.png" alt=""> -->
+                    <!--         </div> -->
+                    <!--         <div class="logo__desc"> -->
+                    <!--             <h3>Bower</h3> -->
+                    <!--         </div> -->
+                    <!--     </div> -->
+		           
+                    <!-- </div> -->
                         
                     <div class="column-2">
                     
@@ -319,18 +373,18 @@
 
                     </div>
                         
-                    <div class="column-2">
+                    <!-- <div class="column-2"> -->
                     
-                        <div class="logo">
-                            <div class="logo__image">
-                                <img src="images/yeoman.png" alt="">
-                            </div>
-                            <div class="logo__desc">
-                                <h3>Yo</h3>
-                            </div>
-                        </div>
+                    <!--     <div class="logo"> -->
+                    <!--         <div class="logo__image"> -->
+                    <!--             <img src="images/yeoman.png" alt=""> -->
+                    <!--         </div> -->
+                    <!--         <div class="logo__desc"> -->
+                    <!--             <h3>Yo</h3> -->
+                    <!--         </div> -->
+                    <!--     </div> -->
 
-                    </div>
+                    <!-- </div> -->
                         
                     <div class="column-2">
                     
@@ -388,7 +442,7 @@
 
 	    <footer>
 		<div class="wrap">
-		    <p>&copy; Craig MacIntyre 2015</p>
+		<p>&copy; Craig MacIntyre <?php echo date('Y'); ?></p>
 		</div>
 	    </footer>
 	</main>
