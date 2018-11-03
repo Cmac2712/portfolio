@@ -19,7 +19,7 @@
 
 	<header id="header" class="text--center posrel"> 
 		<div class="wrap posrel">
-			<div class="profile" style="background-image: url(<?php echo 'http://gravatar.com/avatar/'. md5('cmac2712@gmail.com')?>);"></div>
+			<div class="profile" style="background-image: url(<?php echo 'https://gravatar.com/avatar/'. md5('cmac2712@gmail.com')?>);"></div>
 			<div class="header--title">
 				<h1 class="flush">Craig MacIntyre</h1>
 				<p>Web Developer</p>
