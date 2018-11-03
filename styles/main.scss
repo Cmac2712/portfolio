@@ -438,7 +438,7 @@ header .wrap {
     transition: opacity .5s ease;
 	max-width: 200px;
 
-	@media screen and (min-width: 500px) {
+	@media screen and (min-width: 600px) {
 		max-width: 100%;
 	}
 }
