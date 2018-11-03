@@ -1,7 +1,7 @@
 <!doctype html>
 <head>
-        <title>Craig MacIntyre | Front End Developer</title>
-        <meta name="description" content="Front End Developer based in Glasgow, Scotland">
+        <title>Craig MacIntyre | Web Developer</title>
+        <meta name="description" content="Web Developer based in Glasgow, Scotland">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="google-site-verification" content="RNC8hTSfCJ6_uDDHE1dBAQqOmzdWh5RHllgyhx-oEcM" />
@@ -38,7 +38,7 @@
 		<div class="wrap posrel">
 		    <div class="header--title">
 			    <h1 class="flush">Craig MacIntyre</h1>
-			    <p>Front End Developer</p>
+			    <p>Web Developer</p>
 		    </div>
 		</div>
                 
@@ -460,6 +460,5 @@
 	<script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
 	-->
 	<script src="scripts/main-built.js"></script>
-	<!-- random change -->
 </body>
 </html>
