@@ -728,9 +728,13 @@ nav ul.nav-list li a:hover {
  */
 
 footer {
-    text-align: right;
+    text-align: center;
     margin-top: $spacing-unit*3;
     background-color: $ui-color--shade;
+
+	@media screen and (min-width: 600px) {
+		text-align: right;
+	}
 }
 
 /*-----------------------------*\

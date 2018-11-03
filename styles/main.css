@@ -788,9 +788,12 @@ nav ul.nav-list li a:hover {
  * FOOTER
  */
 footer {
-  text-align: right;
+  text-align: center;
   margin-top: 45px;
   background-color: #d5d5d5; }
+  @media screen and (min-width: 600px) {
+    footer {
+      text-align: right; } }
 
 /*-----------------------------*
 TRUMPS
