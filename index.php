@@ -96,7 +96,7 @@
 								<img src="images/react.png" alt="React Js">
 							</div>
 							<div class="logo__desc">
-								<h3>ReactJs</h3>
+								<h3>React</h3>
 							</div>
 						</div>
 					</div>

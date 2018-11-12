@@ -137,6 +137,7 @@ SETTINGS
 // Typography
 @import 'fonts';
 $font-size: 16px;
+$font-size--small: 14px;
 $font-stack: 'latoregular', helvetica, sans-serif;
 $font-stack--header: 'noto', serif;
 //$icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
@@ -374,7 +375,7 @@ OBJECTS
 
 .skill__desc,
 .logo__desc {
-	display: none;
+	font-size: $font-size--small;
     text-align: center;
 }
 
