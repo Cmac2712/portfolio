@@ -32,6 +32,112 @@
 		<p>My name is Craig and I build websites.</p>
 	</article>
 
+ <section id="skills" class="wrap">
+				<h2 class="underline">Skills</h2>
+				<div class="grid-container">
+					<div class="column-2">
+						<div class="logo">
+							<div class="logo__image">
+								<img src="images/html5.png" alt="">
+							</div>
+							<div class="logo__desc">
+								<h3>HTML</h3>
+							</div>
+						</div>
+					</div>
+
+					<div class="column-2">
+						<div class="logo">
+							<div class="logo__image">
+								<img src="images/css3.png" alt="">
+							</div>
+							<div class="logo__desc">
+								<h3>CSS</h3>
+							</div>
+						</div>
+					</div>
+
+					<div class="column-2">
+						<div class="logo">
+							<div class="logo__image">
+								<img src="images/javascript.png" alt="">
+							</div>
+							<div class="logo__desc">
+								<h3>Javascript</h3>
+							</div>
+						</div>
+					</div>
+
+					<div class="column-2">
+						<div class="logo">
+							<div class="logo__image">
+								<img src="images/php.png" alt="PHP">
+							</div>
+							<div class="logo__desc">
+								<h3>PHP</h3>
+							</div>
+						</div>
+					</div>
+
+					<div class="column-2">
+						<div class="logo">
+							<div class="logo__image">
+								<img src="images/magento.png" alt="Magento">
+							</div>
+							<div class="logo__desc">
+								<h3>Magento</h3>
+							</div>
+						</div>
+					</div>
+
+					<div class="column-2">
+						<div class="logo">
+							<div class="logo__image">
+								<img src="images/react.png" alt="React Js">
+							</div>
+							<div class="logo__desc">
+								<h3>ReactJs</h3>
+							</div>
+						</div>
+					</div>
+
+					<!-- <div class="column-2"> -->
+					<!-- 	<div class="logo"> -->
+					<!-- 		<div class="logo__image"> -->
+					<!-- 			<img src="images/jquery.png" alt=""> -->
+					<!-- 		</div> -->
+					<!-- 		<div class="logo__desc"> -->
+					<!-- 			<h3>jQuery</h3> -->
+					<!-- 		</div> -->
+					<!-- 	</div> -->
+					<!-- </div> -->
+
+					<!-- <div class="column-2"> -->
+					<!-- 	<div class="logo"> -->
+					<!-- 		<div class="logo__image"> -->
+					<!-- 			<img src="images/git.png" alt=""> -->
+					<!-- 		</div> -->
+					<!-- 		<div class="logo__desc"> -->
+					<!-- 			<h3>Git</h3> -->
+					<!-- 		</div> -->
+					<!-- 	</div> -->
+					<!-- </div> -->
+
+					<!-- <div class="column-2"> -->
+					<!-- 	<div class="logo"> -->
+					<!-- 		<div class="logo__image"> -->
+					<!-- 			<img src="images/responsive-design.png" alt=""> -->
+					<!-- 		</div> -->
+					<!-- 		<div class="logo__desc"> -->
+					<!-- 			<h3>Responsive Design</h3> -->
+					<!-- 		</div> -->
+					<!-- 	</div> -->
+					<!-- </div> -->
+
+		  </div>
+
+			</section>
+
 	<section id="contact" class="wrap contact">
 		<h2 class="underline">Contact</h2>
 		<ul>
@@ -46,20 +152,23 @@
 
 	<footer>
 		<div class="wrap">
+			<a href="https://u.magento.com/certification/directory/dev/1785671/" class="mage-cert">
+				<img src="./images/frontend_developer.png" alt="Magento Certified Front-End Developer">
+			</a>
 			<p>&copy; Craig MacIntyre <?php echo date('Y'); ?></p>
 		</div>
 	</footer>
 	</main>
 
 	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-	<script>
+<script>
 (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-														function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
 e=o.createElement(i);r=o.getElementsByTagName(i)[0];
 e.src='//www.google-analytics.com/analytics.js';
 r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
 ga('create','UA-44206590-1');ga('send','pageview');
-	</script>
+</script>
 	<!--
 	 <script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
 	 -->
