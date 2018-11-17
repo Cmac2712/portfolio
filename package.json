@@ -1,20 +1,29 @@
 {
-  "name": "portfolio",
+  "name": "portfolio-react",
   "version": "1.0.0",
-  "description": "My Porfolio Website",
-  "main": "gulpfile.js",
-  "repository": "https://github.com/cmac2712/portfolio.git",
-  "author": "Craig MacIntyre",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/cmac2712/portfolio/issues"
-  },
-  "homepage": "https://github.com/cmac2712/portfolio",
-  "devDependencies": {
-    "gulp": "^3.9.1"
-  },
   "dependencies": {
-    "browser-sync": "^2.23.6",
-    "gulp-sass": "^3.1.0"
+    "@zeit/next-sass": "^1.0.1",
+    "next": "^7.0.2",
+    "node-sass": "^4.10.0",
+    "normalize.css": "^8.0.1",
+    "react": "^16.6.1",
+    "react-dom": "^16.6.1",
+    "react-on-screen": "^2.1.0",
+    "react-pose": "^4.0.2",
+    "react-scroll-to-component": "^1.0.2",
+    "styled-components": "^4.1.1"
+  },
+  "devDependencies": {
+    "css-loader": "^1.0.1"
   }
 }

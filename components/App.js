@@ -1,0 +1,114 @@
+import Header from './Header'
+import About from '../components/About'
+import Skills from '../components/Skills'
+import Experience from '../components/Experience'
+import Footer from '../components/Footer'
+import Nav from '../components/Nav'
+import Head from 'next/head'
+import TrackVisibility from 'react-on-screen'
+import posed from 'react-pose'
+
+class App extends React.Component {
+
+	constructor(props) {
+		super(props)
+
+		this.state = {
+			currentSection: 'top', 
+			offsets: [
+				{
+					id: "header", 
+					offset: 0
+				}
+			]
+		}
+
+		this.changeSection = this.changeSection.bind(this)
+		this.handleScroll = this.handleScroll.bind(this)
+	}
+
+	handleScroll() {
+		var pos = window.scrollY
+		const adjust = 300 
+		const atBottom = (document.documentElement.scrollTop + window.innerHeight) === document.documentElement.offsetHeight
+
+		if (atBottom) {
+			this.setState({
+				currentSection: this.state.offsets[this.state.offsets.length -1].id
+			})
+			
+			return;
+		}
+
+		this.state.offsets.forEach(section => {
+			
+			if (pos > (section.offset - adjust) && this.state.currentSection !== section.id) {
+				 this.setState({
+				 	currentSection: section.id
+				 })
+			}
+		}) 
+
+	}
+
+	componentDidMount() {
+		this.scrollToComponent = require('react-scroll-to-component').bind(this)
+		window.addEventListener('scroll', this.handleScroll)
+	}
+
+	componentWillUnmount() {
+		window.removeEventListener('scroll')
+	}
+
+	changeSection(href) {
+		href = href.substr(1)
+		console.log(href)
+		
+		this.setState({
+			currentSection: href 
+		}, () => {
+			this.scrollToComponent(this[href + "Ref"], { offset: 0, align: 'middle', duration: 500, ease:'inCirc' });
+		})
+	}
+
+	render () {
+		return (
+			<div>
+				<Head>
+					<title>{this.props.meta.title}</title>
+					<meta name="viewport" content="width=device-width, initial-scale=1"/>
+					<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700" rel="stylesheet" />
+				</Head>
+				<Header
+					{...this.props.sectionHeader}
+					ref={(section) => { this.headerRef = section }}
+				> 
+					<TrackVisibility>
+						<Nav
+						  {...this.props.navigation}
+						  {...this.state}
+						  changeSection={this.changeSection} />
+					</TrackVisibility>
+				</Header>
+				<About 
+					{...this.props.sectionAbout}
+					{...this.state}
+					ref={(section) => { this.aboutRef = section }}
+				/>
+				<Skills 
+					{...this.props.sectionSkills}
+					{...this.state}
+					ref={(section) => { this.skillsRef = section }}
+				/>
+				<Experience
+					{...this.props.sectionExperience}
+					{...this.state}
+					ref={(section) => { this.experienceRef = section }}
+				/>
+				<Footer/>
+			</div>
+		)
+	}
+}
+
+export default App
