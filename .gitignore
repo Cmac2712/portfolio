@@ -11,3 +11,4 @@ styles/.main.scss.swo
 scripts/.ui.js.swp
 scripts/*.swp
 *.swp
+.next/

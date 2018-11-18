@@ -15,6 +15,7 @@ class App extends React.Component {
 
 		this.state = {
 			currentSection: 'top', 
+			isScrolling: false, 
 			offsets: [
 				{
 					id: "header", 
@@ -31,6 +32,8 @@ class App extends React.Component {
 		var pos = window.scrollY
 		const adjust = 300 
 		const atBottom = (document.documentElement.scrollTop + window.innerHeight) === document.documentElement.offsetHeight
+
+		if (this.state.isScrolling) { return false; }
 
 		if (atBottom) {
 			this.setState({
@@ -57,17 +60,20 @@ class App extends React.Component {
 	}
 
 	componentWillUnmount() {
-		window.removeEventListener('scroll')
+		window.removeEventListener('scroll', this.handleScroll)
 	}
 
 	changeSection(href) {
 		href = href.substr(1)
-		console.log(href)
 		
 		this.setState({
 			currentSection: href 
 		}, () => {
+			this.setState({ isScrolling: true })
 			this.scrollToComponent(this[href + "Ref"], { offset: 0, align: 'middle', duration: 500, ease:'inCirc' });
+			setTimeout(() => {
+				this.setState({ isScrolling: false })
+			}, 1000)
 		})
 	}
 
