@@ -63,7 +63,7 @@ class Index extends React.Component {
 			sectionAbout: {
 				id: 'about', 
 				title: 'About', 
-				description: 'I\'m a Magento Certified Front-End Developer. Along with JavaScript and am currently dabbling in React. I like to challange myself and am always eager to add to my skill-set with the aim of producing  high quality, efficiant code and clean UIs'
+				description: 'I\’m an experienced Front End Web Developer with a strong grounding in HTML, CSS, JavaScript and responsive design techniques.  With 5 years industry experience, I’ve worked for many high profile clients, working to tight deadlines in an agile environment. I have a strong passion for web development and like to keep my skills sharp by studying the latest trends and technologies.'
 			}, 
 			sectionExperience: {
 				id: 'experience', 
