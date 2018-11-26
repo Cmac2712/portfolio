@@ -4,6 +4,7 @@ class Footer extends React.Component {
 
 	constructor (props) {
 		super(props);
+
 		this.state = {
 			year: new Date().getFullYear()
 		}
