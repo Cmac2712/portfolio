@@ -16,7 +16,7 @@ class Footer extends React.Component {
 				<div className="wrap">
 					<ul className="social">
 						<li>
-							<Link href="https://github.com/Cmac2712/">
+							<Link href="https://github.com/Cmac2712">
 								<a className="social__github" target="_blank">
 									<img src="../static/images/svg/github.svg" alt="GitHub" />
 								</a>
