@@ -659,8 +659,28 @@ COMPONENTS
 
 .site-footer .wrap {
 	display: flex;
-	justify-content: flex-end;
+	//justify-content: flex-end;
+	justify-content: space-between;
 	padding: $spacing-unit * 2;
+}
+
+.social {
+	list-style-type: none;
+}
+
+.social li {
+	margin: 0;
+}
+
+.social__github {
+	display: block;
+	//text-indent: -9999px;
+	max-width: $spacing-unit * 2;
+	max-height: $spacing-unit * 2;
+}
+
+.social__github img {
+	max-width: 100%;
 }
 
 /*-----------------------------*\

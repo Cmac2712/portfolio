@@ -13,6 +13,8 @@
   "license": "ISC",
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
     "next": "^7.0.2",
     "node-sass": "^4.10.0",
     "normalize.css": "^8.0.1",
@@ -21,6 +23,7 @@
     "react-on-screen": "^2.1.0",
     "react-pose": "^4.0.2",
     "react-scroll-to-component": "^1.0.2",
+    "react-svg-loader": "^2.1.0",
     "styled-components": "^4.1.1"
   },
   "devDependencies": {
