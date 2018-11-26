@@ -70,7 +70,7 @@ class Index extends React.Component {
 				title: 'Experience', 
 				expTitle: 'INDEZ Ltd – Front End Developer', 
 				duration: 'April \'14 – Present', 
-				description: 'Web Development Agency Based in Glasgow. Role included both back end and front end tasks: creation of bespoke Magento themes based off PSD/Sketch designs; fixing bugs/creating new features per client\'s request; creation of Magento modules to add features/fix bugs with Magento extensions.', 
+				description: 'Web Development Agency Based in Glasgow. Role included both back end and front end tasks: creation of bespoke Magento themes based off PSD/Sketch designs; fixing bugs/creating new features per client\'s request; creation of Magento modules to add features/fix bugs with Magento extensions. ', 
 				downloadLink: './static/files/craig-macintyre-developer.pdf', 
 				downloadLinkText: 'Download My Cv'
 			}
