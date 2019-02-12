@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Nav /> should match snapshot 1`] = `
+<Nav
+  currentSection="about"
+  links={
+    Array [
+      Object {
+        "href": "#about",
+        "name": "About",
+      },
+      Object {
+        "href": "#skills",
+        "name": "Skills",
+      },
+      Object {
+        "href": "#experience",
+        "name": "Experience",
+      },
+    ]
+  }
+>
+  <div
+    className="nav-container"
+  >
+    <ForwardRef
+      pose="active"
+    >
+      <PoseElement
+        elementType="nav"
+        innerRef={null}
+        pose="active"
+        poseConfig={
+          Object {
+            "active": Object {
+              "applyAtStart": Object {
+                "opacity": 0,
+              },
+              "opacity": 1,
+            },
+            "inactive": Object {
+              "applyAtStart": Object {
+                "opacity": 0,
+              },
+              "opacity": 1,
+            },
+          }
+        }
+      >
+        <nav>
+          <nav
+            className="main-nav main-nav--fixed"
+          >
+            <div
+              className="wrap"
+            >
+              <a
+                className="main-nav__link active"
+                href="#about"
+                key="0"
+                onClick={[Function]}
+              >
+                About
+              </a>
+              <a
+                className="main-nav__link"
+                href="#skills"
+                key="1"
+                onClick={[Function]}
+              >
+                Skills
+              </a>
+              <a
+                className="main-nav__link"
+                href="#experience"
+                key="2"
+                onClick={[Function]}
+              >
+                Experience
+              </a>
+            </div>
+          </nav>
+        </nav>
+      </PoseElement>
+    </ForwardRef>
+  </div>
+</Nav>
+`;

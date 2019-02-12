@@ -20,6 +20,10 @@ class Nav extends React.Component {
 	}
 
 	componentDidMount() {
+		// Avoid testing scroll-to as enzyme won't be able to render this component
+		if (process.env.NODE_ENV === 'test') return;
+
+		// We need 'require' here because we're using server-side rendering
 		this.scrollTo = require('react-scroll-to-component')
 	}
 
