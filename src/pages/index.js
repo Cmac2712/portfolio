@@ -1,6 +1,7 @@
 import axios from 'axios';
 import App from '../components/App.js';
 import '../scss/styles.scss';
+import Loading from '../components/Loading';
 
 class Index extends React.Component {
 
@@ -14,7 +15,8 @@ class Index extends React.Component {
 			sectionHeader: {},
 			sectionSkills: { skills: [] }, 
 			sectionAbout: {}, 
-			sectionExperience: {}
+			sectionExperience: {}, 
+			loading: true
 			
 		}
 
@@ -22,19 +24,22 @@ class Index extends React.Component {
 
 	componentDidMount() {
 
-		const protocol = process.env.NODE_ENV === 'LIVE' ? 'https' : 'http';
-
-		axios.get(protocol + '://localhost:8000/api/data')
+		axios.get('https://craigmacintyre.co.uk/api/data')
 			.then((res) => {
 				const data = res.data;
-				this.setState(data);
+				this.setState({
+					...data, 
+					loading: false
+				});
 			});
+
 	}
 	
 	render () {
-		return (
-			<App {...this.state} />
-		)
+
+		if (this.state.loading) return <Loading/>;
+		
+		return  <App {...this.state} />;
 	}
 }
 

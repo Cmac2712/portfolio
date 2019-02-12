@@ -16,9 +16,9 @@ I'm always looking to learn and improve so if you have any feedback/criticism yo
 npm install
 
 /* Create the nextjs build */ 
-npm build
+npm run build
 
 /* Run application and server */
-npm start
+npm run start
 
 `

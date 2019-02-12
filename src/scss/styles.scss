@@ -413,6 +413,57 @@ COMPONENTS
 
 
 /**
+ * LOADING
+ */
+
+.loading-icon {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+}
+
+.loading-icon:after {
+	border: 1px red solid;
+  content: " ";
+  display: block;
+  width: 46px;
+  height: 46px;
+  margin: 1px;
+  border-radius: 50%;
+  border: 5px solid $brand-color;
+  border-color: $brand-color transparent $brand-color transparent;
+  animation: loading-icon 1.2s linear infinite;
+}
+
+@keyframes loading-icon {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+  transform: rotate(360deg);
+	}
+}
+		
+
+.loading {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: repeating-linear-gradient(
+	45deg,
+	$ui-color,
+	$ui-color 5px,
+	$ui-color--shade 5px,
+	$ui-color--shade 7px
+	);
+}
+
+/**
  * HEADER
  */
 
