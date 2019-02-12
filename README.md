@@ -11,7 +11,7 @@ I'm always looking to learn and improve so if you have any feedback/criticism yo
 
 ## Run 
 
-`
+```
 /* Install packages */
 npm install
 
@@ -20,5 +20,4 @@ npm run build
 
 /* Run application and server */
 npm run start
-
-`
+```
