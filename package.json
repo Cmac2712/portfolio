@@ -41,10 +41,13 @@
     "css-loader": "^1.0.1",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.9.1",
-    "jest": "^24.1.0"
+    "jest": "^24.1.0",
+    "prop-types": "^15.7.1"
   },
   "jest": {
-    "setupFilesAfterEnv": ["<rootDir>/jest.setup.js"],
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest.setup.js"
+    ],
     "testPathIgnorePatterns": [
       "<rootDir>/src/build/",
       "<rootDir>/node_modules/"
@@ -52,7 +55,7 @@
     "transform": {
       ".*": "babel-jest"
     }
-  }, 
+  },
   "babel": {
     "env": {
       "development": {

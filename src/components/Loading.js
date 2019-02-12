@@ -2,8 +2,8 @@ class Loading extends React.Component {
 
 	render () {
 		return (
-			<div class="loading">
-					<div class="loading-icon"></div>
+			<div className="loading">
+					<div className="loading-icon"></div>
 			</div>
 		)
 	}

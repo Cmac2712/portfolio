@@ -8,8 +8,6 @@ class About extends React.Component {
 	componentDidMount() {
 		const id = this.props.id
 
-		console.dir(this.ref.current)
-		
 		this.props.offsets.push({
 			id: id, 
 			offset: this.ref.current.offsetTop

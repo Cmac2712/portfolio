@@ -1,14 +1,32 @@
-import Header from './Header'
-import About from '../components/About'
-import Skills from '../components/Skills'
-import Experience from '../components/Experience'
-import Footer from '../components/Footer'
-import Nav from '../components/Nav'
-import Head from 'next/head'
-import TrackVisibility from 'react-on-screen'
-import posed from 'react-pose'
+import Header from './Header';
+import About from '../components/About';
+import Skills from '../components/Skills';
+import Experience from '../components/Experience';
+import Footer from '../components/Footer';
+import Nav from '../components/Nav';
+import Head from 'next/head';
+import TrackVisibility from 'react-on-screen';
+import posed from 'react-pose';
+import PropTypes from 'prop-types';
 
 class App extends React.Component {
+
+	// Make sure the data we get looks correct
+	static propTypes = {
+		meta: PropTypes.shape({
+			title: PropTypes.string.isRequired
+		}), 
+		navigation: PropTypes.shape({
+			links: PropTypes.array
+		}),
+		sectionHeader: PropTypes.object.isRequired,
+		sectionSkills: PropTypes.shape({
+			skills: PropTypes.array.isRequired
+		}),
+		sectionAbout: PropTypes.object.isRequired,
+		sectionExperience: PropTypes.object.isRequired,
+		loading: PropTypes.bool
+	} 
 
 	constructor(props) {
 		super(props)
@@ -16,6 +34,8 @@ class App extends React.Component {
 		this.state = {
 			currentSection: 'top', 
 			isScrolling: false, 
+			// Page offest for each section; this will help the page scroll to the correct
+			// section when a link is clicked
 			offsets: [
 				{
 					id: "header", 
@@ -24,10 +44,14 @@ class App extends React.Component {
 			]
 		}
 
+		// Make sure we bind the context of 'this' to the class
 		this.changeSection = this.changeSection.bind(this)
 		this.handleScroll = this.handleScroll.bind(this)
 	}
 
+	/**
+	 * Update the calue of 'currentSection' so the menu links can change color 
+	 */
 	handleScroll() {
 		var pos = window.scrollY
 		const adjust = 300 
@@ -63,6 +87,9 @@ class App extends React.Component {
 		window.removeEventListener('scroll', this.handleScroll)
 	}
 
+	/**
+	 * Handle the page scroll when a user clicks a menu item.
+	 */
 	changeSection(href) {
 		href = href.substr(1)
 		
@@ -119,4 +146,4 @@ class App extends React.Component {
 	}
 }
 
-export default App
+export default App;
