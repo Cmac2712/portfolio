@@ -13,10 +13,13 @@
   "license": "ISC",
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
+    "axios": "^0.18.0",
     "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
     "express": "^4.16.4",
     "next": "^7.0.2",
     "node-sass": "^4.10.0",
+    "nodemon": "^1.18.10",
     "normalize.css": "^8.0.1",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
