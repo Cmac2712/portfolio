@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "next",
-    "build": "next build",
-    "start": "concurrently 'next start' 'npm run server'", 
+    "build": "next build ./src",
+    "start": "concurrently 'next start ./src' 'npm run server'",
     "server": "node server/app.js"
   },
   "keywords": [],

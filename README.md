@@ -6,6 +6,19 @@ It is built with:
 
 - React
 - NextJs
-- Styled Components
 
 I'm always looking to learn and improve so if you have any feedback/criticism you can contact me at craig@craigmacintyre.io
+
+## Run 
+
+`
+/* Install packages */
+npm install
+
+/* Create the nextjs build */ 
+npm build
+
+/* Run application and server */
+npm start
+
+`
