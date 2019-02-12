@@ -12,3 +12,4 @@ scripts/.ui.js.swp
 scripts/*.swp
 *.swp
 .next/
+build/**/*

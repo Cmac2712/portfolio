@@ -1,10 +1,6 @@
 import axios from 'axios';
-import App from '../components/App.js'
-import '../scss/styles.scss'
-
-const Test = props => {
-	return <p {...props}>Test Component {props.meta.title}</p>
-};
+import App from '../components/App.js';
+import '../scss/styles.scss';
 
 class Index extends React.Component {
 
@@ -25,7 +21,10 @@ class Index extends React.Component {
 	}	
 
 	componentDidMount() {
-		axios.get('/api/data')
+
+		const protocol = process.env.NODE_ENV === 'LIVE' ? 'https' : 'http';
+
+		axios.get(protocol + '://localhost:8000/api/data')
 			.then((res) => {
 				const data = res.data;
 				this.setState(data);
