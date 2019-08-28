@@ -10,8 +10,6 @@ It is built with:
 - NextJs
 - Jest + Enzyme for testing and snapshots
 
-I'm always looking to learn and improve so if you have any feedback/criticism you can contact me at craig@craigmacintyre.io
-
 ## Run 
 
 ```
