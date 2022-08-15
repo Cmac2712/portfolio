@@ -1,6 +1,10 @@
-const withSass = require('@zeit/next-sass');
-const config = {
-	distDir: '../build'
-}
+module.exports = {
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ["@svgr/webpack"]
+    });
 
-module.exports = withSass(config)
+    return config;
+  }
+};

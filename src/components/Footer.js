@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import React from 'react';
 
 class Footer extends React.Component {
 
@@ -15,15 +15,7 @@ class Footer extends React.Component {
 		return (
 			<footer className="site-footer">
 				<div className="wrap">
-					<ul className="social">
-						<li>
-							<Link href="https://github.com/Cmac2712">
-								<a className="social__github" target="_blank">
-									<img src="../static/images/svg/github.svg" alt="GitHub" />
-								</a>
-							</Link>
-						</li>
-					</ul>
+					
 					<div className="copyright copyright__footer">
 						&copy; Craig MacIntyre {this.state.year}
 					</div>

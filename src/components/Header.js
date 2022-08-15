@@ -1,3 +1,4 @@
+import React from 'react';
 import Link from 'next/link'
 import Router, { withRouter } from 'next/router'
 
@@ -15,8 +16,11 @@ class Header extends React.Component {
 		return (
 			<header className="site-header">
 				<div className='wrap'>
-					<h1 className="site-intro">{this.props.intro}</h1>
-					<p className="site-tagline">{this.props.tagline}</p>
+					<h1 
+						className="site-intro"
+						dangerouslySetInnerHTML={ { __html: this.props.intro } }
+					>
+					</h1>
 					{this.props.children}
 				</div>
 			</header>

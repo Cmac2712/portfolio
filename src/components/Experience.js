@@ -1,3 +1,4 @@
+import React from "react"
 class Experience extends React.Component {
 
 	constructor (props) {
@@ -26,11 +27,15 @@ class Experience extends React.Component {
 					<span className="exp_duration">
 						{this.props.duration}
 					</span>
-					<div className='role'>
-						<h4 className='role__header'>{this.props.expTitle}</h4>
-						<p className="role__desc">{this.props.description}</p>
-					</div>
-					<a href="../static/downloads/craig-macintyre-developer.pdf" className="download">{this.props.downloadLinkText}</a>
+					{
+						this.props.roles.map(role => (
+							<div className='role'>
+								<h4 className='role__header'>{role.title}</h4>
+								<p className="role__desc ">{role.description}</p>
+							</div>
+						))
+					}
+					<a href="https://docs.google.com/document/d/1dFukPSACNZZEWXl6ad2p3joUJUX0vz9IGrTzKmaSYuQ/edit?usp=sharing" className="download">{this.props.downloadLinkText}</a>
 				</div>
 			</section>
 		)

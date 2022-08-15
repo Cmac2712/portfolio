@@ -229,19 +229,23 @@ body:after {
 }
 
 body {
-	background: repeating-linear-gradient(
-	//45deg,
-	135deg,
-	$ui-color,
-	$ui-color 5px,
-	$ui-color--shade 5px,
-	$ui-color--shade 7px
-	);
+	// background: repeating-linear-gradient(
+	// //45deg,
+	// 135deg,
+	// $ui-color,
+	// $ui-color 5px,
+	// $ui-color--shade 5px,
+	// $ui-color--shade 7px
+	// );
 }
 
 p {
 	font-size: $delta;
 	margin: 0;
+}
+
+strong {
+	font-weight: 600;
 }
 
 h1,
@@ -315,6 +319,10 @@ OBJECTS
 	min-width: 320px;
 }
 
+.wrap--medium {
+	max-width: 750px;
+}
+
 .underline {
 	position: relative;
 	margin-bottom: $spacing-unit*3;
@@ -351,7 +359,14 @@ OBJECTS
 	to   { opacity: 1;  }
 }
 
-
+/**
+ * VIEWPORT
+ */
+.viewport {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
 
 /**
  * GRID
@@ -468,7 +483,7 @@ COMPONENTS
  */
 
 .site-header {
-	padding: $spacing-unit * 5 0;
+	padding: $spacing-unit * 3 0;
 	background: repeating-linear-gradient(
 	45deg,
 	$ui-color,
@@ -482,7 +497,6 @@ COMPONENTS
 	font-size: $beta;
 	font-weight: 300;
 	margin: 0;
-	margin-bottom: $spacing-unit;
 	text-transform: none;
 	line-height: 1;
 }
@@ -492,7 +506,6 @@ COMPONENTS
 	color: $brand-color;
 	font-weight: 600;
 	margin: 0;
-	margin-bottom: $spacing-unit;
 	line-height: 1;
 
 	@media screen and (min-width: $lap) {
@@ -596,10 +609,7 @@ COMPONENTS
  */
 
 .about {
-	background: $brand-color;
-	color: #fff;
 	padding: $spacing-unit * 3 0;
-	margin-bottom: $spacing-unit * 3;
 }
 
 .about__header {
@@ -609,7 +619,8 @@ COMPONENTS
 }
 
 .about__desc {
-	font-size: $epsilon;
+	font-size: $font-size;
+	max-width: 750px;
 }
 
 /**
@@ -705,6 +716,7 @@ COMPONENTS
  */
 
 .site-footer {
+	margin-top: auto;
 	background-color: $ui-color--shade;
 }
 
@@ -716,11 +728,18 @@ COMPONENTS
 }
 
 .social {
+	padding-top: $spacing-unit--double;
 	list-style-type: none;
 }
 
 .social li {
 	margin: 0;
+	margin-bottom: $spacing-unit;
+}
+
+.social a {
+	display: flex;
+	align-items: center;
 }
 
 .social__github {
@@ -730,8 +749,24 @@ COMPONENTS
 	max-height: $spacing-unit * 2;
 }
 
-.social__github img {
-	max-width: 100%;
+.social__linkedin svg, 
+.social__github svg {
+	flex: 0 0 24px;
+	fill: $brand-color;
+	filter: grayscale(100);
+	transition: filter .25s ease;
+}
+
+.social__linkedin:hover svg, 
+.social__github:hover svg {
+	fill: $brand-color;
+	filter: grayscale(0);
+	transition: filter .25s ease;
+}
+
+.social__linkedin span, 
+.social__github span {
+	padding-left: $spacing-unit--half;
 }
 
 /*-----------------------------*\
@@ -771,6 +806,11 @@ HELPERS
 /**
  * Helpers 
  */
+
+// Colors
+.text-brand {
+	color: $brand-color;
+}
 
 // Add/remove floats
 
