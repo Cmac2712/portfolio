@@ -4,7 +4,6 @@ import App from '../components/App.js';
 //import '../scss/styles.scss';
 import Loading from '../components/Loading';
 
-
 export async function getServerSideProps() {
   const res = await fetch('https://craigmacintyre.co.uk/api/data')
   const props = await res.json()
