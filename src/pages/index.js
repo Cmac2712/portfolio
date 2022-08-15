@@ -6,7 +6,7 @@ import Loading from '../components/Loading';
 
 
 export async function getServerSideProps() {
-  const res = await fetch('https://craigmacintyre.co.uk/api/data')
+  const res = await fetch('https://www.craigmacintyre.co.uk/api/data')
   const props = await res.json()
 
   return {
