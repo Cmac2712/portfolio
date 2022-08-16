@@ -728,11 +728,13 @@ COMPONENTS
 }
 
 .social {
+	display: flex;
 	padding-top: $spacing-unit--double;
 	list-style-type: none;
 }
 
 .social li {
+	width: 75px;
 	margin: 0;
 	margin-bottom: $spacing-unit;
 }
@@ -740,6 +742,7 @@ COMPONENTS
 .social a {
 	display: flex;
 	align-items: center;
+	text-decoration: underline;
 }
 
 .social a span {
@@ -774,7 +777,7 @@ COMPONENTS
 
 .social__linkedin span, 
 .social__github span {
-	padding-left: $spacing-unit--half;
+	//padding-left: $spacing-unit--half;
 }
 
 /*-----------------------------*\
