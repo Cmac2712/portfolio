@@ -6,10 +6,10 @@ import Loading from '../components/Loading';
 
 export async function getServerSideProps() {
   const res = await fetch('https://craigmacintyre.co.uk/api/data')
-  const props = await res.json()
+  const data = await res.json()
 
   return {
-	props
+	props: data.body
   }
 }
 class Index extends React.Component {

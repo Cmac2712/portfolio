@@ -25,13 +25,12 @@ class App extends React.Component {
 	} 
 
 	constructor(props) {
-		console.log('data: ', data)
 		super(props)
 	}
 
 	render () {
 		return (
-			<div class="viewport">
+			<div className="viewport">
 				<Head>
 					<title>{this.props.meta.title}</title>
 					<meta name="viewport" content="width=device-width, initial-scale=1"/>

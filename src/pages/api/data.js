@@ -5,8 +5,6 @@ export default function handler(
   response
 ) {
   response.status(200).json({
-    body: data,
-    query: request.query,
-    cookies: request.cookies,
+    body: data
   });
 }

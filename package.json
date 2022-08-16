@@ -14,7 +14,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@svgr/webpack": "^6.3.1",
     "axios": "^0.25.0",
     "body-parser": "^1.19.1",
     "concurrently": "^7.0.0",
@@ -26,9 +25,6 @@
     "normalize.css": "^8.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-on-screen": "^2.1.1",
-    "react-pose": "^4.0.10",
-    "react-scroll-to-component": "^1.0.2",
     "react-svg-loader": "^3.0.3",
     "sass": "^1.54.4",
     "styled-components": "^5.3.3"
@@ -36,11 +32,9 @@
   "devDependencies": {
     "@babel/core": "^7.16.10",
     "@babel/preset-env": "^7.16.11",
-    "babel-jest": "^27.4.6",
+    "@svgr/webpack": "^6.3.1",
     "babel-plugin-transform-export-extensions": "^6.22.0",
     "css-loader": "^6.5.1",
-    "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.6",
     "jest": "^27.4.7",
     "prop-types": "^15.8.1"
   },
