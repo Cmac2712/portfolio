@@ -1,7 +1,5 @@
 import React from "react"
 import Link from 'next/link'
-import LinkedIn from '../static/images/svg/linkedin.svg'
-import GitHub from '../static/images/svg/github.svg'
 class About extends React.Component {
 
 	constructor (props) {
@@ -22,7 +20,7 @@ class About extends React.Component {
 						<li>
 							<Link href="https://github.com/Cmac2712">
 								<a className="social__github" target="_blank">
-									<GitHub />
+									<img src="../static/images/svg/github.svg" alt="" />
 									<span>GitHub</span>
 								</a>
 							</Link>
@@ -30,7 +28,7 @@ class About extends React.Component {
 						<li>
 							<Link href="https://www.linkedin.com/in/craig-macintyre-8b4059b0/">
 								<a className="social__linkedin" target="_blank">
-									<LinkedIn />
+									<img src="../static/images/svg/linkedin.svg" alt="" />
 									<span>LinkedIn</span>
 								</a>
 							</Link>
