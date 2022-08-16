@@ -742,6 +742,10 @@ COMPONENTS
 	align-items: center;
 }
 
+.social a span {
+	flex: 0 0 auto;
+}
+
 .social__github {
 	display: block;
 	//text-indent: -9999px;
