@@ -1,7 +1,5 @@
 import React from 'react';
-import axios from 'axios';
 import App from '../components/App.js';
-//import '../scss/styles.scss';
 import Loading from '../components/Loading';
 
 export async function getServerSideProps() {

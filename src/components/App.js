@@ -46,11 +46,6 @@ class App extends React.Component {
 				<About
 					{...this.props.sectionAbout}
 				/>
-				{/* <Experience
-					{...this.props.sectionExperience}
-					{...this.state}
-					ref={(section) => { this.experienceRef = section }}
-				/> */}
 				<Footer/>
 			</div>
 		)

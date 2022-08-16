@@ -22,6 +22,7 @@ class About extends React.Component {
 						<li>
 							<Link href="https://github.com/Cmac2712">
 								<a className="social__github" target="_blank">
+									<GitHub />
 									<span>GitHub</span>
 								</a>
 							</Link>
@@ -29,6 +30,7 @@ class About extends React.Component {
 						<li>
 							<Link href="https://www.linkedin.com/in/craig-macintyre-8b4059b0/">
 								<a className="social__linkedin" target="_blank">
+									<LinkedIn />
 									<span>LinkedIn</span>
 								</a>
 							</Link>

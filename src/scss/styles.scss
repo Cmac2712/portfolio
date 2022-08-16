@@ -749,6 +749,8 @@ COMPONENTS
 	max-height: $spacing-unit * 2;
 }
 
+.social__linkedin img,
+.social__github img, 
 .social__linkedin svg, 
 .social__github svg {
 	flex: 0 0 24px;
@@ -757,6 +759,8 @@ COMPONENTS
 	transition: filter .25s ease;
 }
 
+.social__linkedin:hover img,
+.social__github:hover img, 
 .social__linkedin:hover svg, 
 .social__github:hover svg {
 	fill: $brand-color;
