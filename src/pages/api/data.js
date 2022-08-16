@@ -1,4 +1,3 @@
-import { NextApiRequest, NextApiResponse } from 'next';
 import data from '../../../server/data.json'
 
 export default function handler(
