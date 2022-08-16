@@ -22,7 +22,7 @@ class About extends React.Component {
 							<Link href="https://github.com/Cmac2712">
 								<a className="social__github" target="_blank">
 									<Image
-										src="/static/images/svg/github.svg" 
+										src="/images/svg/github.svg" 
 										height={24}
 										width={24}
 										alt="GitHub"
@@ -35,7 +35,7 @@ class About extends React.Component {
 							<Link href="https://www.linkedin.com/in/craig-macintyre-8b4059b0/">
 								<a className="social__linkedin" target="_blank">
 									<Image
-										src="/static/images/svg/linkedin.svg" 
+										src="/images/svg/linkedin.svg" 
 										height={24}
 										width={24}
 										alt="LinkedIn"
